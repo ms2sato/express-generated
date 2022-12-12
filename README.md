@@ -29,3 +29,5 @@ v18.12.0
 #13 0.341 nodenv: no such command `install'
 #13 ERROR: executor failed running [/bin/sh -c /usr/local/nodenv/bin/nodenv install 18.12.0]: exit code: 1
 ```
+
+ref https://github.com/microsoft/vscode-dev-containers/blob/main/containers/docker-in-docker/.devcontainer/devcontainer.json
