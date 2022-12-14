@@ -2,15 +2,14 @@
   "name": "express-generated-devcontainer",
   "build": { "dockerfile": "Dockerfile" },
   "runArgs": ["--init", "--privileged"],
-
-	// Configure tool-specific properties.
-	"customizations": {
-		// Configure properties specific to VS Code.
-		"vscode": {
-			// Add the IDs of extensions you want installed when the container is created.
-			"extensions": [
-				"ms-azuretools.vscode-docker"
-			]
-		}
-	}
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/progate,type=bind,consistency=cached",
+  "workspaceFolder": "/home/vscode",
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": ["ms-azuretools.vscode-docker"]
+    }
+  }
 }
