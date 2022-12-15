@@ -24,4 +24,4 @@ RUN mkdir -p "$HOME/.nodenv"/plugins
 RUN git clone https://github.com/nodenv/node-build.git "$HOME/.nodenv"/plugins/node-build
 
 RUN $HOME/.nodenv/bin/nodenv install 18.12.0
-# RUN nodenv global 18.12.0
+RUN nodenv global 18.12.0
