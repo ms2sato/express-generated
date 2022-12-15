@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu-20.04
 SHELL ["/bin/bash", "-c"]
 
 # RUN apt-get update && apt-get upgrade &&
-RUN apt-get update && apt-get -y install curl git
+RUN apt-get update && apt-get -y install curl git libgtk-3.0 libnss3 libdrm-dev libgbm-dev libasound2
 
 # RUN git clone https://github.com/OiNutter/nodenv /usr/local/nodenv
 # RUN mkdir -p /usr/local/nodenv/plugins
