@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/devcontainers/base:ubuntu-20.04
 
-# SHELL ["/bin/bash", "-c"]
+SHELL ["/bin/bash", "-c"]
 
 # RUN apt-get update && apt-get upgrade &&
 RUN apt-get update && apt-get -y install curl git
@@ -23,5 +23,5 @@ RUN echo 'eval "$(nodenv init -)"' >> ~/.bashrc
 RUN mkdir -p "$HOME/.nodenv"/plugins
 RUN git clone https://github.com/nodenv/node-build.git "$HOME/.nodenv"/plugins/node-build
 
-# RUN /usr/local/nodenv/bin/nodenv install 18.12.0
+RUN $HOME/.nodenv/bin/nodenv install 18.12.0
 # RUN nodenv global 18.12.0

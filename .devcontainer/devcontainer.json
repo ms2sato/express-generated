@@ -2,7 +2,7 @@
   "name": "express-generated-devcontainer",
   "build": { "dockerfile": "Dockerfile" },
   "runArgs": ["--init", "--privileged"],
-  "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/progate,type=bind,consistency=cached",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/environment,type=bind,consistency=cached",
   "workspaceFolder": "/home/vscode",
   // Configure tool-specific properties.
   "customizations": {
